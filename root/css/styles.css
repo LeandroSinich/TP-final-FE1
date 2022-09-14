@@ -55,7 +55,7 @@ flex-direction: column;
 align-items: center;
     margin: 0;
     background-color: #ffffff;
-    padding: 5%;
+    padding: 5% 5% 0;
     
 }
 
@@ -208,9 +208,122 @@ h4{
 
 .column button {
     margin-top: 40px;
+    margin-bottom: 180px;
     
 
 }
- 
+/*seccion 4*/
+
+#section {
+    background-color: #8B48BF;
+    width: 100vw;
+    height: 225px;
+    margin: 0;
+}
+
+#h2 {
+    color: #ffffff;
+    position: relative;
+    left: 15%;
+    margin: 0;
+}
+
+#button {
+    background-color: #FFFFFF;
+    color: #8B48BF;
+    position: relative;
+    right: 15%;
+}
+
+/*footer*/
+
+footer {
+
+    background-color: #1E1E26;
+    padding: 20px 0%;
+    margin: 0;
+    height: 250px;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: center;
+    
+    height: 100%;
+    
+}
 
 
+footer a{
+    color: #FFFFFF;
+}
+
+#footerButton {
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.copyright {
+    color: #8C8C94;
+    position: relative;
+    text-align: end;
+    right: 20%;
+    bottom: 25%;
+
+}
+
+.input {
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 350px;
+    margin: 20px 40px 20px 0px;
+
+
+}
+
+.footerSection2 {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    width: 350px;
+    margin: 40px 80px 20px 40px;
+}
+
+.divColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.divColumn a {
+    font-size: 16px;
+}
+
+.logos {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aNone {
+    visibility:hidden;
+}
+
+.form {
+    margin: 40px 40px;
+    width: 350px;
+    text-align: center;
+}
