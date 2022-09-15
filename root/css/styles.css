@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 /* general */
@@ -17,7 +18,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px 0px;
+    padding: 30px 12%;
    /* background-color: #b38383;*/
 }
 
@@ -47,6 +48,23 @@ a {
     background-color: #8B48BF;
     color: #FFFFFF;
 }
+
+#buttonShadow {
+    height: 50px;
+    width: 130px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    box-shadow: 3px 3px 5px rgb(173, 173, 173);
+}
+
+.hamburguesa {
+    display: none;
+
+}
+
 /*primera seccion main*/
 
 main {
@@ -87,6 +105,8 @@ p {
     width: 1440px;
 }
 
+
+
 .article {
     width: 50%;
     height: 50%;
@@ -95,6 +115,14 @@ p {
 }
 
 /*segunda seccion main*/
+
+.flexSpace2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+    width: 1440px;
+}
 
 h2 {
     font-size: 36px;
@@ -206,6 +234,8 @@ h4{
     
 }
 
+
+
 .column button {
     margin-top: 40px;
     margin-bottom: 180px;
@@ -233,6 +263,7 @@ h4{
     color: #8B48BF;
     position: relative;
     right: 15%;
+    box-shadow: 3px 3px 5px rgb(44, 44, 44);
 }
 
 /*footer*/
@@ -240,7 +271,7 @@ h4{
 footer {
 
     background-color: #1E1E26;
-    padding: 20px 0%;
+    padding: 15px 0%;
     margin: 0;
     height: 250px;
 }
@@ -267,8 +298,10 @@ footer a{
 .copyright {
     color: #8C8C94;
     position: relative;
+    
+    width: 300px;
     text-align: end;
-    right: 20%;
+    left: 65%;
     bottom: 25%;
 
 }
@@ -298,7 +331,7 @@ footer a{
     justify-content: space-between;
     height: 60%;
     width: 350px;
-    margin: 40px 80px 20px 40px;
+    margin: 40px 110px 20px 70px;
 }
 
 .divColumn {
@@ -326,4 +359,128 @@ footer a{
     margin: 40px 40px;
     width: 350px;
     text-align: center;
+}
+
+@media (max-width: 600px){
+    /*queries header*/
+    nav {
+        display: none;
+    }
+    #buttonShadow{
+        display: none;
+    }
+    .hamburguesa {
+        display: inline-block;
+    }
+    header {
+        justify-content: space-between;
+    }
+
+    /*queries primera seccion*/
+    .flexSpace {
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin: 5% 0px;
+    }
+    .copete{
+        text-align: center;
+        width: 80%;
+    }
+
+    /*queries segunda seccion*/
+
+    .flexSpace2 {
+        flex-direction: column;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    .ulMain {
+        width: 400px;
+        padding: 0;
+
+    }
+    /*queries cards*/
+    #anisha{
+        display: none;
+    }
+    #richard {
+        display: none;
+    }
+
+    /* queries seccion cuatro*/
+    #section{
+        height: 300px;
+    }
+    #h2 {
+        left: 0;
+        margin: 4%;
+        width: 70%;
+    }
+    #button {
+        right: 0;
+        margin: 4%;
+    }
+
+    /*footer*/
+    footer {
+        height: 550px;
+    }
+    .footerDiv {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .form{
+        width: 400px;
+    }
+    .input{
+        width: 250px;
+    }
+    .footerSection2{
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+        height: 30%;
+    }
+    .divColumn{
+        margin: 0px 15%;
+        height: 150px;
+    }
+    .footerSection{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 20%;
+        margin: 5% 0px;
+        width: 100%;
+        
+    }
+    .logos{
+        width: 90%;
+        justify-content: space-around;
+        margin: 7%;
+        
+    }
+    .copyright{
+        left: 0;
+        bottom: 10%;
+        text-align: center;
+        width: 100%;
+    }
+
+
 }
